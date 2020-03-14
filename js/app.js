@@ -63,6 +63,7 @@ const listParks = (data) => {
     data.map(obj => {
         //img desc
         const name = obj.fullName;
+        const desc = obj.description;
         const img = (obj.images.length != 0)? obj.images[0].url 
             : "https://sciences.ucf.edu/psychology/wp-content/uploads/sites/63/2019/09/No-Image-Available.png"
         const address = obj.addresses[0];
@@ -71,13 +72,13 @@ const listParks = (data) => {
             : "No specified address"
         const link = obj.url;
         const states = obj.states;
-        appendToList(img, name, addressString, link, states);
+        appendToList(img, name, desc, addressString, link, states);
         //console.log(img, name, addressString, link, states)
     })
 }
 
 //
-const appendToList = (parkImg, parkName, parkAddress, parkLink, states) => {
+const appendToList = (parkImg, parkName, parkDesc, parkAddress, parkLink, states) => {
     document.querySelector(".results-list").innerHTML += 
     `        
     <li>
@@ -85,6 +86,7 @@ const appendToList = (parkImg, parkName, parkAddress, parkLink, states) => {
             <img class='park-image' alt="Park-image" src=${parkImg}>
             <div class="park-card">
                 <h1 class="park-name">${parkName}</h1>
+                <p class="park-desc">${parkDesc}</p>
                 <p class="park-states">Located in: ${states}</p>
                 <p class="park-address">${parkAddress}</p>
                 <a class="park-link" href="${parkLink}">${parkLink}</a>
