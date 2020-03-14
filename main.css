@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif
+
+}
+
+body {
+    background: #fcfcfc;
+}
+header{
+    margin: 3.33% auto;
+    text-align: center;
+    font-size: 105%;
+}
+
+header > h1 {
+    margin: 0 auto;
+}
+
+section {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 100%;
+}
+
+button {
+    font-size: 75%;
+    border-radius: 20px;
+    min-width: 100px;
+}
+
+.results-container h2 {
+    margin: 2.5% 0 0 0;
+}
+
+
+.results {
+    max-width: 80vw;
+    margin: 1% auto;
+
+}
+
+ul {
+    cursor: default;
+    padding: 4%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    
+}
+
+ul li {
+    text-align: left;
+    list-style-type: none;
+    font-size: 100%;
+    width: 100%;
+    
+}
+
+.park-container > * {
+    margin: 0 1em;
+ 
+}
+
+.park-container {
+    padding: 1.75%;
+    color: black;
+    min-height: 80px;
+    margin: 1% auto;
+    width: 50%;
+    border: 1px solid rgba(204, 204, 204, 0.88);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.park-container > img {
+    max-height: 133px;
+    min-height: 133px;
+    min-width: 133px;
+    width: 133px;
+    max-width: 133px;
+    background: grey;
+    border-radius: 2px;
+    box-shadow: 5px 5px 25px rgba(12, 12, 12, 0.1);
+    margin: 2.5%;
+}
+
+.park-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.park-card > p {
+    margin: 2% 0;
+    font-size: 90%;
+}
+
+.park-card > h1 {
+    margin: 2% 0;
+}
+
+li a {
+    cursor: pointer;
+    color: #529fce;
+}
+
+li a:hover {
+    color: grey;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+form > * {
+    display: block;
+    text-align: left;
+    margin: 0.33%;
+    padding: 5px; 
+    font-size: 120%;
+
+}
+
+form  > .input-row {
+    display: block;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-row input {
+    padding-left: 0.66%;
+    text-align: center;
+    width: 100px;
+}
+
+.input-row label {
+    margin: 0 1.5%;
+}
+
+form > button {
+    padding: 2.5px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+}
